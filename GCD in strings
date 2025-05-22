@@ -1,0 +1,9 @@
+Euclidean Algorithm:
+condition : a>b
+
+The Euclidean algorithm computes the GCD of two numbers through successive division with remainder:
+
+- Let a and b be the string lengths, where a > b.
+- Replace a with b, and b with a % b.
+- Repeat until b becomes 0. The value of a at this point is the GCD.
+
