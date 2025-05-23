@@ -7,3 +7,20 @@ The Euclidean algorithm computes the GCD of two numbers through successive divis
 - Replace a with b, and b with a % b.
 - Repeat until b becomes 0. The value of a at this point is the GCD.
 
+let a=65 and b=25
+65%25
+25%15
+15%10
+10%5 = 0
+Ans=5
+
+class Solution:
+    def gcdOfStrings(self, str1: str, str2: str) -> str:
+        if str1+str2!=str2+str1:
+            return ""
+        
+        a,b=len(str1),len(str2)
+        while b>0:
+            a,b=b,a%b
+
+        return str1[:a]
